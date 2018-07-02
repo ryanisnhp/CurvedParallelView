@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UIN-4B-AB3">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List Curved Parallel View Controller-->
+        <scene sceneID="79T-E4-A0h">
+            <objects>
+                <viewController id="UIN-4B-AB3" customClass="ListCurvedParallelViewController" customModule="CurvedParallelView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gwK-nJ-mbq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yiran-ding-572142-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="Y8y-kc-VKh">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20D-fI-wpD">
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="e8d-8i-all">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="768"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="trp-4d-8pX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="768"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <prototypes>
+                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CurvedParallelCell" rowHeight="233" id="PeO-AP-j4l" customClass="CurvedParallelCell" customModule="CurvedParallelView" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="28" width="375" height="233"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PeO-AP-j4l" id="S9q-Xk-3Z6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="232.66666666666666"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </tableViewCellContentView>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </tableViewCell>
+                                            </prototypes>
+                                        </tableView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="trp-4d-8pX" firstAttribute="top" secondItem="e8d-8i-all" secondAttribute="top" id="FxY-MI-oyb"/>
+                                        <constraint firstAttribute="trailing" secondItem="trp-4d-8pX" secondAttribute="trailing" id="UrE-IN-Q9d"/>
+                                        <constraint firstItem="trp-4d-8pX" firstAttribute="leading" secondItem="e8d-8i-all" secondAttribute="leading" id="iYc-kC-RMJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="trp-4d-8pX" secondAttribute="bottom" id="ugu-8b-e34"/>
+                                    </constraints>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="20D-fI-wpD" secondAttribute="bottom" id="A75-rf-u0c"/>
+                            <constraint firstItem="20D-fI-wpD" firstAttribute="top" secondItem="OAX-Sv-MWR" secondAttribute="top" id="Acj-kJ-f37"/>
+                            <constraint firstItem="20D-fI-wpD" firstAttribute="leading" secondItem="OAX-Sv-MWR" secondAttribute="leading" id="HXr-Hj-WBi"/>
+                            <constraint firstItem="OAX-Sv-MWR" firstAttribute="trailing" secondItem="20D-fI-wpD" secondAttribute="trailing" id="Jiy-Kc-hsc"/>
+                            <constraint firstItem="Y8y-kc-VKh" firstAttribute="leading" secondItem="OAX-Sv-MWR" secondAttribute="leading" id="UA8-rI-PAc"/>
+                            <constraint firstItem="OAX-Sv-MWR" firstAttribute="bottom" secondItem="Y8y-kc-VKh" secondAttribute="bottom" id="kAk-Iz-0eV"/>
+                            <constraint firstItem="OAX-Sv-MWR" firstAttribute="trailing" secondItem="Y8y-kc-VKh" secondAttribute="trailing" id="pNP-Kf-MI0"/>
+                            <constraint firstItem="Y8y-kc-VKh" firstAttribute="top" secondItem="OAX-Sv-MWR" secondAttribute="top" id="wPq-En-3Vz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OAX-Sv-MWR"/>
+                    </view>
+                    <connections>
+                        <outlet property="listCurvedParallelTableView" destination="trp-4d-8pX" id="b2l-tS-xF9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uxz-3Z-8WF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="784.79999999999995" y="23.838080959520241"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="yiran-ding-572142-unsplash" width="2832" height="4240"/>
+    </resources>
+</document>
