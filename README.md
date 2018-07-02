@@ -48,6 +48,8 @@ extension ListCurvedParallelViewController: OnTapButtonDelegate{
 ## Features
 
 - [x] Curved Parallel View with simple case 💪
+- [x] Dynamic label width and mini view 🚴
+- [ ] Minimize Label font size when it's too long 🤸
 - [ ] Validate valid constraints 🎬
 - [ ] Allow user customize it as much as possible 🎁
 - [ ] Create more awesome UI 😍
