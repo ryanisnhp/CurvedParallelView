@@ -17,7 +17,7 @@ class ThumbView: UIView{
     let DEFAULT_CURVED_PORTITION : CGFloat = 0.2
     let DEFAULT_MINI_WIDTH_PORTITION : CGFloat = 0.6
     
-    // MARK: MAIN VIEW
+    // MARK: - MAIN VIEW
     var fillBackgroundColor: UIColor?{
         didSet{
             setNeedsDisplay()
@@ -30,7 +30,7 @@ class ThumbView: UIView{
         }
     }
     
-    // mMARK: MINI VIEW
+    // MARK: MINI VIEW
     lazy var miniView = MiniView()
     var miniViewWidthPortition: CGFloat?{
         didSet{
@@ -78,7 +78,7 @@ class ThumbView: UIView{
         }
     }
     
-    //MATrk: Label
+    //MARK: - Label
     lazy var miniLabel = UILabel()
     
     var labelFrame: CGRect?{
