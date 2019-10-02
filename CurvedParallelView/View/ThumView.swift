@@ -78,7 +78,7 @@ class ThumbView: UIView{
         }
     }
     
-    //MARK: - Label
+    //MARK: - LABEL
     lazy var miniLabel = UILabel()
     
     var labelFrame: CGRect?{
