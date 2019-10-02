@@ -7,7 +7,9 @@
 //
 
 import UIKit
+
 struct ParallelTheme{
+    
     let miniViewWidthPortition: CGFloat?
     let curved: CGFloat?
     let imageBackground: UIImage?
