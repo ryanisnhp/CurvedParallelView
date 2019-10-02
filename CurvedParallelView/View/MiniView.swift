@@ -10,6 +10,7 @@ import UIKit
 
 class MiniView: UIView{
     
+    //MARK: - CONSTANTS
     let DEFAULT_HEIGHT_PORTITION : CGFloat = 0.24
     let DEFAULT_CURVED_PORTITION : CGFloat = 0.2
     let DEFAULT_MINI_WIDTH_PORTITION : CGFloat = 0.6
@@ -57,7 +58,7 @@ class MiniView: UIView{
         drawMiniView(rect: rect)
     }
     
-    //MARK: MINI VIEW
+    //MARK: - MINI VIEW
     func drawMiniView(rect: CGRect){
         guard let curved = curved else {return}
         guard let miniViewHeight = miniViewHeight else {return}
